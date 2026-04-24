@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Home - GLO Smart Solutions</title>
+  <title>Site Map - GLO Smart Solutions</title>
   <link rel="stylesheet" href="style.css">
-<link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
 
 <body>
@@ -12,13 +12,18 @@
 <a class="skip-link" href="#main">Skip to main content</a>
 
 <header>
-<a href="index.html" class="brand">
-  <img src="images/glo-logo.png" alt="GLO logo" class="glo-logo">
-  <span class="divider"></span>
-  <span class="brand-text">Smart Solutions</span>
-</a>
 
-  <nav>
+  <a href="index.html" class="brand">
+    <img src="images/glo-logo.png" alt="GLO logo" class="glo-logo">
+    <span class="divider"></span>
+    <span class="brand-text">Smart Solutions</span>
+  </a>
+
+  <!-- Hamburger -->
+  <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+
+  <!-- IMPORTANT FIX: add id -->
+  <nav id="nav-menu">
     <a href="index.html">Home</a>
     <a href="about.html">About Us</a>
     <a href="services.html">Services</a>
@@ -29,17 +34,23 @@
     <a href="contact.html">Contact Us</a>
     <a class="active" href="sitemap.html">Site Map</a>
   </nav>
+
 </header>
 
 <main id="main">
-  <h1>Site Map</h1>
-	<iframe 
-  src="https://www.google.com/maps?q=Alexandria,VA&output=embed"
-  width="600" 
-  height="350"
-  style="border:0;">
-</iframe>
 
+  <h1>Site Map</h1>
+
+  <!-- Map -->
+  <iframe 
+    src="https://www.google.com/maps?q=Alexandria,VA&output=embed"
+    width="600" 
+    height="350"
+    style="border:0;"
+    title="Map of Alexandria, Virginia">
+  </iframe>
+
+  <!-- Links -->
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About Us</a></li>
@@ -50,10 +61,19 @@
     <li><a href="commercial.html">Commercial</a></li>
     <li><a href="contact.html">Contact Us</a></li>
   </ul>
+
 </main>
 
 <footer>
   <p>&copy; 2026 GLO Smart Solutions</p>
 </footer>
+
+<!-- IMPORTANT: add script -->
+<script>
+  function toggleMenu() {
+    document.getElementById("nav-menu").classList.toggle("show");
+  }
+</script>
+
 </body>
 </html>
