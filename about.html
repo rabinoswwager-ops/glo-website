@@ -8,15 +8,21 @@
 </head>
 
 <body>
+
 <a class="skip-link" href="#main">Skip to main content</a>
 
 <header>
   <a href="index.html" class="brand">
-  <img src="images/glo-logo.png" alt="GLO logo" class="glo-logo">
-  <span class="divider"></span>
-  <span class="brand-text">Smart Solutions</span>
-</a>
-  <nav>
+    <img src="images/glo-logo.png" alt="GLO logo" class="glo-logo">
+    <span class="divider"></span>
+    <span class="brand-text">Smart Solutions</span>
+  </a>
+
+  <!-- Hamburger -->
+  <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+
+  <!-- FIX -->
+  <nav id="nav-menu">
     <a href="index.html">Home</a>
     <a class="active" href="about.html">About Us</a>
     <a href="services.html">Services</a>
@@ -30,27 +36,38 @@
 </header>
 
 <main id="main">
-  <div class="card">
-  <h1>About GLO</h1>
-
-  <p>
-    GLO Smart Solutions provides IT consulting, cybersecurity, and software solutions.
-    Our mission is to help businesses stay secure and efficient. Our vision is to be
-    a trusted technology partner.
-  </p>
-	</div>
 
   <div class="card">
-<h2>Mission</h2>
+    <h1>About GLO</h1>
+
+    <p>
+      GLO Smart Solutions provides IT consulting, cybersecurity, and software solutions.
+      Our mission is to help businesses stay secure and efficient. Our vision is to be
+      a trusted technology partner.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Mission</h2>
     <blockquote>
-      <p>Our mission is to empower businesses with secure, reliable, and scalable technology solutions that enhance operational efficiency, safeguard sensitive data, and drive sustainable growth in today&rsquo;s digital environment.</p>
+      <p>
+        Our mission is to empower businesses with secure, reliable, and scalable technology solutions 
+        that enhance operational efficiency, safeguard sensitive data, and drive sustainable growth 
+        in today’s digital environment.
+      </p>
     </blockquote>
   </div>
 
   <div class="card">
     <h2>Vision</h2>
-    <p>Our vision is to become a trusted technology partner for modern businesses by providing secure and reliable solutions that improve performance and protect valuable data. We aim to support organizations as they grow by offering dependable IT services, strong cybersecurity, and modern cloud solutions. By focusing on customer needs and continuous improvement, we want to help businesses stay competitive, efficient, and prepared for the future.</p>
+    <p>
+      Our vision is to become a trusted technology partner for modern businesses by providing secure 
+      and reliable solutions that improve performance and protect valuable data. We aim to support 
+      organizations as they grow by offering dependable IT services, strong cybersecurity, and modern 
+      cloud solutions.
+    </p>
   </div>
+
 </main>
 
 <footer>
@@ -58,5 +75,13 @@
   <p>Email: info@glosmart.com | Phone: (555) 123-4567</p>
   <p>Social Media: Facebook | LinkedIn | X</p>
 </footer>
+
+<!-- FIX -->
+<script>
+  function toggleMenu() {
+    document.getElementById("nav-menu").classList.toggle("show");
+  }
+</script>
+
 </body>
 </html>
