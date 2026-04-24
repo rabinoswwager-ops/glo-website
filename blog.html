@@ -4,20 +4,25 @@
   <meta charset="UTF-8">
   <title>Blog - GLO Smart Solutions</title>
   <link rel="stylesheet" href="style.css">
-	<link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
 
 <body>
+
 <a class="skip-link" href="#main">Skip to main content</a>
 
 <header>
   <a href="index.html" class="brand">
-  <img src="images/glo-logo.png" alt="GLO logo" class="glo-logo">
-  <span class="divider"></span>
-  <span class="brand-text">Smart Solutions</span>
-</a>
+    <img src="images/glo-logo.png" alt="GLO logo" class="glo-logo">
+    <span class="divider"></span>
+    <span class="brand-text">Smart Solutions</span>
+  </a>
 
-  <nav>
+  <!-- Hamburger -->
+  <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+
+  <!-- FIX -->
+  <nav id="nav-menu">
     <a href="index.html">Home</a>
     <a href="about.html">About Us</a>
     <a href="services.html">Services</a>
@@ -35,22 +40,40 @@
 
   <div class="card">
     <h2>How to Protect Your Business from Cyber Threats</h2>
-    <p>Learn best practices for keeping your business safe online.</p>
+    <p>
+      Learn best practices for keeping your business safe online, including strong passwords,
+      regular updates, and employee awareness training.
+    </p>
   </div>
 
   <div class="card">
     <h2>The Importance of Cloud Security</h2>
-    <p>Understand how cloud security helps protect business data.</p>
+    <p>
+      Understand how cloud security protects sensitive business data and ensures safe access
+      across distributed systems and remote environments.
+    </p>
   </div>
 
   <div class="card">
     <h2>Benefits of Managed IT Services</h2>
-    <p>Discover how managed services improve efficiency and reduce costs.</p>
+    <p>
+      Discover how managed IT services improve efficiency, reduce downtime, and help businesses
+      focus on core operations.
+    </p>
   </div>
+
 </main>
 
 <footer>
   <p>&copy; 2026 GLO Smart Solutions</p>
 </footer>
+
+<!-- FIX: SCRIPT -->
+<script>
+  function toggleMenu() {
+    document.getElementById("nav-menu").classList.toggle("show");
+  }
+</script>
+
 </body>
 </html>
