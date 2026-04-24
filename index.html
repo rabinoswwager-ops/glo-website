@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - GLO Smart Solutions</title>
+  <link rel="stylesheet" href="style.css">
+ <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header>
+  <a href="index.html" class="brand">
+    <img src="images/glo-logo.png" alt="GLO logo" class="glo-logo">
+    <span class="divider"></span>
+    <span class="brand-text">Smart Solutions</span>
+  </a>
+
+  <nav>
+    <a class="active" href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="products.html">Products</a>
+    <a href="blog.html">Blog</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="commercial.html">Commercial</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="sitemap.html">Site Map</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Smart, Secure Solutions for Your Business</h1>
+
+     <p class="hero-text">
+  GLO Smart Solutions provides IT consulting, cybersecurity, and software solutions designed to help businesses stay secure, efficient, and competitive.
+</p>
+
+      
+    </div>
+  </section>
+
+  <!-- WELCOME -->
+  <section class="welcome-section">
+    <h2>Welcome to GLO Smart Solutions</h2>
+
+    <p>
+      We deliver innovative IT consulting, advanced cybersecurity protection, and custom
+      software solutions tailored to modern business needs. Our goal is to help organizations
+      use technology with confidence while protecting their systems, data, and operations.
+    </p>
+  </section>
+
+  <!-- SERVICES PREVIEW -->
+  <section class="home-cards">
+
+    <div class="home-card">
+      <h3>IT Consulting</h3>
+      <p>
+        Professional guidance to improve business technology, increase efficiency,
+        and support better decision-making.
+      </p>
+    </div>
+
+    <div class="home-card">
+      <h3>Cybersecurity</h3>
+      <p>
+        Advanced protection to secure networks, systems, and sensitive data from
+        cyber threats and unauthorized access.
+      </p>
+    </div>
+
+    <div class="home-card">
+      <h3>Software Solutions</h3>
+      <p>
+        Custom-built software designed to streamline operations, improve productivity,
+        and support business growth.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="cta">
+    <h2>Ready to Secure Your Business?</h2>
+    <p>
+      Discover how GLO Smart Solutions can help you build a smarter, safer,
+      and more efficient business environment.
+    </p>
+  <div class="btn-center">
+  <a class="button" href="services.html">Get Started</a>
+</div>
+  </section>
+  <!-- DISCLAIMER -->
+  <section class="disclaimer">
+    <h2>Disclaimer</h2>
+   <p>This website is a fictitious project created for educational purposes. 
+Some media content is used under fair use guidelines.</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 GLO Smart Solutions</p>
+  <p>Email: info@glosmart.com | Phone: (555) 123-4567</p>
+  <p>Follow us: Facebook | LinkedIn | X</p>
+</footer>
+<!-- BACK TO TOP BUTTON -->
+<button onclick="topFunction()" id="topBtn" title="Go to top">↑</button>
+
+<!-- SCRIPT -->
+<script>
+  window.onload = function() {
+    let mybutton = document.getElementById("topBtn");
+
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    };
+
+    window.topFunction = function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  };
+</script>
+</body>
+</html>
