@@ -4,46 +4,52 @@
   <meta charset="UTF-8">
   <title>Home - GLO Smart Solutions</title>
   <link rel="stylesheet" href="style.css">
- <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
+
 <body>
 
+<!-- Skip link -->
 <a class="skip-link" href="#main">Skip to main content</a>
 
+<!-- Header -->
 <header>
+
   <a href="index.html" class="brand">
     <img src="images/glo-logo.png" alt="GLO logo" class="glo-logo">
     <span class="divider"></span>
     <span class="brand-text">Smart Solutions</span>
   </a>
 
-<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <!-- Hamburger -->
+  <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
 
-<nav id="nav-menu">
-  <a href="index.html">Home</a>
-  <a href="about.html">About Us</a>
-  <a href="services.html">Services</a>
-  <a href="products.html">Products</a>
-  <a href="blog.html">Blog</a>
-  <a href="testimonials.html">Testimonials</a>
-  <a href="commercial.html">Commercial</a>
-  <a href="contact.html">Contact Us</a>
-  <a href="sitemap.html">Site Map</a>
-</nav>
+  <!-- Navigation -->
+  <nav id="nav-menu">
+    <a class="active" href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="products.html">Products</a>
+    <a href="blog.html">Blog</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="commercial.html">Commercial</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="sitemap.html">Site Map</a>
+  </nav>
+
 </header>
 
+<!-- Main -->
 <main id="main">
 
-  <!-- HERO SECTION -->
+  <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
       <h1>Smart, Secure Solutions for Your Business</h1>
 
-     <p class="hero-text">
-  GLO Smart Solutions provides IT consulting, cybersecurity, and software solutions designed to help businesses stay secure, efficient, and competitive.
-</p>
-
-      
+      <p class="hero-text">
+        GLO Smart Solutions provides IT consulting, cybersecurity, and software solutions designed to help businesses stay secure, efficient, and competitive.
+      </p>
     </div>
   </section>
 
@@ -58,7 +64,7 @@
     </p>
   </section>
 
-  <!-- SERVICES PREVIEW -->
+  <!-- SERVICES -->
   <section class="home-cards">
 
     <div class="home-card">
@@ -87,36 +93,46 @@
 
   </section>
 
-  <!-- CALL TO ACTION -->
+  <!-- CTA -->
   <section class="cta">
     <h2>Ready to Secure Your Business?</h2>
     <p>
       Discover how GLO Smart Solutions can help you build a smarter, safer,
       and more efficient business environment.
     </p>
-  <div class="btn-center">
-  <a class="button" href="services.html">Get Started</a>
-</div>
+
+    <div class="btn-center">
+      <a class="button" href="services.html">Get Started</a>
+    </div>
   </section>
+
   <!-- DISCLAIMER -->
   <section class="disclaimer">
     <h2>Disclaimer</h2>
-   <p>This website is a fictitious project created for educational purposes. 
-Some media content is used under fair use guidelines.</p>
+    <p>
+      This website is a fictitious project created for educational purposes.
+      Some media content is used under fair use guidelines.
+    </p>
   </section>
 
 </main>
 
+<!-- Footer -->
 <footer>
   <p>&copy; 2026 GLO Smart Solutions</p>
   <p>Email: info@glosmart.com | Phone: (555) 123-4567</p>
   <p>Follow us: Facebook | LinkedIn | X</p>
 </footer>
-<!-- BACK TO TOP BUTTON -->
+
+<!-- Back to top -->
 <button onclick="topFunction()" id="topBtn" title="Go to top">↑</button>
 
-<!-- SCRIPT -->
+<!-- Script -->
 <script>
+  function toggleMenu() {
+    document.getElementById("nav-menu").classList.toggle("show");
+  }
+
   window.onload = function() {
     let mybutton = document.getElementById("topBtn");
 
@@ -129,9 +145,10 @@ Some media content is used under fair use guidelines.</p>
     };
 
     window.topFunction = function() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0, behavior: "smooth" });
     };
   };
 </script>
+
 </body>
 </html>
