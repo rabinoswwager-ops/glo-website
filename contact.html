@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Contact Us - GLO Smart Solutions</title>
   <link rel="stylesheet" href="style.css">
-	<link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
 
 <body>
@@ -12,12 +12,14 @@
 
 <header>
   <a href="index.html" class="brand">
-  <img src="images/glo-logo.png" alt="GLO logo" class="glo-logo">
-  <span class="divider"></span>
-  <span class="brand-text">Smart Solutions</span>
-</a>
+    <img src="images/glo-logo.png" alt="GLO logo" class="glo-logo">
+    <span class="divider"></span>
+    <span class="brand-text">Smart Solutions</span>
+  </a>
 
-  <nav>
+  <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+
+  <nav id="nav-menu">
     <a href="index.html">Home</a>
     <a href="about.html">About Us</a>
     <a href="services.html">Services</a>
@@ -35,7 +37,7 @@
 
   <p>Email: info@glosmart.com</p>
   <p>Phone: (555) 123-4567</p>
-  <p>Address: 123 Technology Drive, Business City, VA</p>
+  <p>Address: 123 Technology Drive, Alexandria, VA</p>
 
   <form>
     <input type="text" placeholder="Your Name">
@@ -47,8 +49,13 @@
 
 <footer>
   <p>&copy; 2026 GLO Smart Solutions</p>
-	<a class="skip-link" href="#main">Skip to main content</a>
-
 </footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("nav-menu").classList.toggle("show");
+  }
+</script>
+
 </body>
 </html>
