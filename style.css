@@ -191,7 +191,9 @@ h2 {
   color: #ffffff;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
 }
-
+.services-hero h1 {
+  color: #ffffff !important;
+}
 .service-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
